@@ -1,0 +1,37 @@
+{
+	"$schema": "https://deno.land/x/deno/cli/schemas/config-file.v1.json",
+	"tasks": {
+		"build": "deno run -A npm:vite build",
+		"check": "deno run -A npm:@biomejs/biome check .",
+		"dev": "deno run -A src/main.ts --dev",
+		"fmt": "deno run -A npm:@biomejs/biome check --linter-enabled=false --write .",
+		"start": "deno run -A src/main.ts"
+	},
+	"compilerOptions": {
+		"lib": ["deno.ns", "dom", "dom.iterable"],
+		"jsx": "react-jsx",
+		"jsxImportSource": "solid-js"
+	},
+	"imports": {
+		"@babel/plugin-syntax-jsx": "npm:@babel/plugin-syntax-jsx@^7.25.9",
+		"@babel/plugin-syntax-typescript": "npm:@babel/plugin-syntax-typescript@^7.25.9",
+		"@biomejs/biome": "npm:@biomejs/biome@^1.9.4",
+		"@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.0",
+		"@hono/hono": "jsr:@hono/hono@^4.6.16",
+		"@hono/vite-dev-server": "npm:@hono/vite-dev-server@^0.18.0",
+		"@std/cli": "jsr:@std/cli@^1.0.10",
+		"@std/path": "jsr:@std/path@^1.0.8",
+		"@stylexjs/babel-plugin": "npm:@stylexjs/babel-plugin@^0.10.0",
+		"@stylexjs/postcss-plugin": "npm:@stylexjs/postcss-plugin@^0.10.0",
+		"@stylexjs/stylex": "npm:@stylexjs/stylex@^0.10.0",
+		"@surrealdb/surrealdb": "jsr:@surrealdb/surrealdb@^1.1.0",
+		"lightningcss": "npm:lightningcss@^1.29.1",
+		"solid-js": "npm:solid-js@^1.9.4",
+		"tailwindcss": "npm:tailwindcss@^4.0.0-beta.9",
+		"vike-node": "npm:vike-node@^0.3.0",
+		"vite": "npm:vite@^6.0.7",
+		"vite-plugin-solid": "npm:vite-plugin-solid@^2.11.0",
+		"src/": "./src/"
+	},
+	"nodeModulesDir": "auto"
+}
