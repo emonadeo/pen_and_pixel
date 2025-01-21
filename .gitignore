@@ -1,25 +1,34 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+build/
+certs/
+data/
+dist/
+media/
+node_modules/
+out/
+secrets/
+temp/
+vendor/
 
-node_modules
-dist
-dist-ssr
-.vite
-*.local
+.astro/
+.next/
+.payload/
+.pnpm/
+.vercel/
+.vite/
+.yarn/
 
-# Editor directories and files
+.idea/
 .vscode/*
 !.vscode/extensions.json
-.idea
+
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+history.txt
+
+*.local
+
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+*.pem
