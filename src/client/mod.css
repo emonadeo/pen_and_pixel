@@ -1,0 +1,16 @@
+@import "tailwindcss/preflight.css" layer(preflight);
+
+@layer base {
+	html,
+	body,
+	#root {
+		height: 100%;
+	}
+
+	body {
+		background-color: #ffedd5;
+		color: #431407;
+	}
+}
+
+@stylex;

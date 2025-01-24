@@ -1,9 +1,8 @@
 import { Hono } from "@hono/hono";
 
-const router = new Hono();
+import { router } from "src/server/api/mod.ts";
 
-router.get("/hello", (c) => {
-	return c.text("Hello Hono!");
-});
+const server = new Hono();
+server.route("/api", router);
 
-export { router };
+export default server;
